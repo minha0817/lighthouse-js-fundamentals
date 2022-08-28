@@ -7,11 +7,11 @@ const judgeVegetable = function(vegetables, metric) {
       bestVegetable = vegetables[i]
     }
   }
-
   return console.log(bestVegetable.submitter);
 
 }
 
+// *** second try with using reduce ***
 // const judgeVegetable = function (vegetables, metric) {
 //   // let theMost = 0;
 //   // for(let i = 0; i < vegetables.length; i++){
@@ -22,8 +22,7 @@ const judgeVegetable = function(vegetables, metric) {
 //     return prev[metric] > current[metric] ? prev : current
 //   }
 // );
-// console.log(theMost.submitter);
-  
+//     return theMost.submitter;
 // }
 
 const vegetables = [
@@ -45,16 +44,4 @@ const vegetables = [
 ]
 
 const metric = 'redness'
-// const theMost = vegetables.reduce(
-//   (prev, current) => {
-//     return prev.redness > current.redness? prev : current
-//   }
-// );
-// console.log(theMost.submitter);
-
 judgeVegetable(vegetables, metric)
-
-// console.log(vegetables[0].redness);
-// judgeVegetable(vegetables, metric)
-
-// console.log(vegetables[0].submitter);
